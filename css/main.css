@@ -1,0 +1,253 @@
+/* General Styles */
+.container {
+  margin-top: 20px;
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+/* Custom Navbar Styles */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  margin: 0 auto; /* Center the nav items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px; /* Add some space between nav items */
+}
+
+.nav-link:hover {
+  color: #ffdd57 !important; /* Add hover effect */
+}
+
+.navbar .btn-outline-success,
+.navbar .btn-outline-danger {
+  color: white !important;
+  border-color: white !important;
+}
+
+.navbar .btn-outline-success:hover,
+.navbar .btn-outline-danger:hover {
+  background-color: white !important;
+  color: #343a40 !important;
+}
+
+/* About Page Styles */
+.about-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-container h1 {
+  color: #343a40;
+}
+
+.about-container .lead {
+  color: #6c757d;
+}
+
+.about-image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #dee2e6;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Home Page Styles */
+.home-container {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.home-container h1 {
+  color: #343a40;
+}
+
+.home-container .lead {
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+/* Carousel Styles */
+.carousel-img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.carousel-caption button {
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Reviews, Cars, Contact Page Styles */
+.reviews-container,
+.cars-container,
+.contact-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.reviews-container h1,
+.cars-container h1,
+.contact-container h1 {
+  color: #343a40;
+}
+
+.reviews-container .form-group textarea,
+.reviews-container .form-group input,
+.contact-container .form-group textarea,
+.contact-container .form-group input {
+  height: auto;
+}
+
+.reviews-container .list-group-item {
+  margin-bottom: 10px;
+}
+
+.reviews-container .list-group-item h5 {
+  margin-bottom: 5px;
+}
+
+.reviews-container .form-group .name-input,
+.contact-container .form-group input[type="text"] {
+  height: auto;
+  width: 200px;
+}
+
+.reviews-container .form-group .review-textarea,
+.contact-container .form-group textarea {
+  height: 100px;
+}
+
+/* Cars Page Styles */
+.cars-container .filters input,
+.cars-container .filters select {
+  margin-bottom: 10px;
+}
+
+.cars-container .car-image {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Thumbnail Styles */
+.img-thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  min-width: 100px;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.page-item {
+  margin: 0 2px;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #0056b3;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin: 0 5px;
+  }
+
+  .reviews-container, .cars-container, .contact-container, .home-container {
+    padding: 10px;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+  }
+
+  .img-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
